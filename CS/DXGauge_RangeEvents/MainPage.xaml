@@ -1,0 +1,41 @@
+﻿<UserControl x:Class="DXGauge_RangeEvents.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:dxga="http://schemas.devexpress.com/winfx/2008/xaml/gauges"
+    mc:Ignorable="d"
+    d:DesignHeight="300" d:DesignWidth="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <!--State indicator represented by Ellipse-->
+        <Ellipse x:Name="stateIndicator" Grid.Row="1"
+                 Width="50" Height="50" 
+                 Fill="Gray" />
+        <!---->
+        <dxga:CircularGaugeControl Grid.RowSpan="2" 
+                                   EnableAnimation="True">
+            <dxga:CircularGaugeControl.Scales>
+                <dxga:ArcScale>
+                    <dxga:ArcScale.Needles>
+                        <dxga:ArcScaleNeedle IsInteractive="True" />
+                    </dxga:ArcScale.Needles>
+                        <dxga:ArcScale.Ranges>
+                        <dxga:ArcScaleRange StartValue="10" EndValue="30"   
+                                            IndicatorEnter="GreenRange_IndicatorEnter" 
+                                            IndicatorLeave="GreenRange_IndicatorLeave"/>
+                        <dxga:ArcScaleRange StartValue="30" EndValue="60"  
+                                            IndicatorEnter="YellowRange_IndicatorEnter" 
+                                            IndicatorLeave="YellowRange_IndicatorLeave"/>
+                        <dxga:ArcScaleRange StartValue="60" EndValue="90"   
+                                            IndicatorEnter="RedRange_IndicatorEnter" 
+                                            IndicatorLeave="RedRange_IndicatorLeave"/>
+                    </dxga:ArcScale.Ranges>
+                     </dxga:ArcScale>
+            </dxga:CircularGaugeControl.Scales>
+        </dxga:CircularGaugeControl>
+           </Grid>
+</UserControl>
