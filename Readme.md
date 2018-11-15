@@ -1,3 +1,9 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [MainPage.xaml](./CS/DXGauge_RangeEvents/MainPage.xaml) (VB: [MainPage.xaml](./VB/DXGauge_RangeEvents/MainPage.xaml))
+* [MainPage.xaml.cs](./CS/DXGauge_RangeEvents/MainPage.xaml.cs) (VB: [MainPage.xaml](./VB/DXGauge_RangeEvents/MainPage.xaml))
+<!-- default file list end -->
 # How to determine whether an indicator's value falls into a particular range
 
 
