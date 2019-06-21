@@ -5,6 +5,9 @@
 * [MainPage.xaml.cs](./CS/DXGauge_RangeEvents/MainPage.xaml.cs) (VB: [MainPage.xaml.vb](./VB/DXGauge_RangeEvents/MainPage.xaml.vb))
 <!-- default file list end -->
 # How to determine whether an indicator's value falls into a particular range
+<!-- run online -->
+**[[Run Online]](https://codecentral.devexpress.com/e3329)**
+<!-- run online end -->
 
 
 <p>In some cases, you need to know whether or not the current value of an indicator belongs to a particular range. This example shows how to create a state indicator that changes its color depending on the current range. </p><p><br />
